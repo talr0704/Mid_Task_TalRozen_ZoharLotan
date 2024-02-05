@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="description" content="JavaScript Prog 3">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Telem">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>תכנות 3 - JavaScript</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">עמותת עמדא</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">בית</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">גורמים לדמנציה</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">קבוצות תמיכה - בקרוב</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" id="search-input" placeholder="חיפוש" aria-label="Search">
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <h1>התנהגויות מאתגרות בטיפול בחולי דמנציה</h1>
+        </div>
+    </header>
+
+
+
+  
+      <div class="cards-container row row-cols-1 row-cols-md-2 row-cols-lg-3 " id="cards-container">
+        <div class="col mb-3" id="placeholderCard">
+          <div class="card h-100" style="width: 18rem;">
+            <img src="" class="card-img-top" alt="Card Image">
+            <div class="card-body">
+              <h2 class="card-title">Card Title</h2>
+              <p class="card-text">Card abstract content. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget nibh eleifend, volutpat risus eu, hendrerit nisi. Sed sodales purus eu risus tincidunt, eget aliquam risus tincidunt.</p>
+              <button type="button" class="btn btn-dark"  data-bs-toggle="modal" data-bs-target="#myModal">לעוד מידע</button>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="modal-body">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">סגירה</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
